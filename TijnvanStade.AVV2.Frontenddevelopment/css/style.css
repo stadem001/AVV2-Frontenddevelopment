@@ -1,0 +1,257 @@
+* {
+
+    font-family: serif;
+}
+header {
+    border-radius: 1em 1em;
+    border: 0.2em solid deeppink;
+    -moz-box-shadow: 1em 1em 1em black;
+    -webkit-box-shadow: 1em 1em 1em black;
+    box-shadow: 0.2em 0.2em 0.2em black;
+}
+a {
+    text-decoration: none;
+    color: deeppink;
+    text-shadow: 0.04em 0.04em 0em deeppink;
+}
+a:hover {
+    font-size: 1.2em;
+}
+
+#cmd-logo:hover {
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition-duration: 5s;
+}
+
+#cmd-logo {
+    width: 80%;
+    background-color: transparent;
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+h1 + p {
+    font-size: 1.2em;
+}
+button[type="submit"] {
+    background-color: aquamarine;
+    width: 15%;
+    height: 20%;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 600;
+}
+button[type="submit"]:hover {
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+    transition-duration: 5s;
+}
+input[type="submit"] {
+    background-color: aquamarine;
+    width: 15%;
+    height: 20%;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 600;
+}
+input[type="submit"]:hover {
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+    transition-duration: 5s;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font: 200 1em Helvetica, Verdana, sans-serif;
+    border-bottom: 0.2em solid pink;
+}
+
+li:last-child {
+    border: none;
+}
+
+li a {
+    text-decoration: none;
+    color: deeppink;
+    display: block;
+    width: 22em;
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+    font-size: 1.1em;
+    background-color: deeppink;
+    color: bisque;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#sitemap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: auto;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 0;
+    justify-content: space-around;
+    width: 100%;
+    background-color: bisque;
+
+}
+body > main {
+    order: 1;
+    width: 80%;
+    background-color: bisque;
+
+}
+
+body > aside {
+    order: 1;
+    width: 20%;
+    background-color: aqua;
+    border: 0.2 solid black;
+}
+
+body > section {
+    order: 2;
+    background-color: bisque;
+    width: 100%;
+}
+body > header {
+    order: 0;
+    background-color: cadetblue;
+    width: 100%;
+}
+body > footer {
+    order: 3;
+    background-color: darkslategrey;
+}
+main > form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: 30%;
+}
+form > fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 0;
+}
+
+#stage {
+    background-color: cadetblue;
+}
+
+#project {
+    background-color: brown;
+}
+
+
+ /* max grootte scherm 800 px, anders normale grootte. */
+@media (max-width: 800px) {
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 0;
+    justify-content: space-around;
+    width: 100%;
+    background-color: bisque;
+}
+body > main {
+    order: 1;
+    width: 100%;
+    background-color: bisque;
+}
+
+body > aside {
+    order: 3;
+    width: 100%;
+    background-color: aqua;
+}
+
+body > section {
+    order: 2;
+    width: 100%;
+    background-color: bisque;
+}
+body > header {
+    order: 0;
+    width: 100%;
+    background-color: cadetblue;
+}
+body > footer {
+    order: 4;
+    width: 100%;
+    background-color: darkslategrey;
+}
+
+button[type="submit"] {
+    background-color: aquamarine;
+    width: 35%;
+    height: 20%;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 600;
+}
+button[type="submit"]:hover {
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+    transition-duration: 5s;
+}
+input[type="submit"] {
+    background-color: aquamarine;
+    width: 35%;
+    height: 20%;
+    font-size: 1em;
+    font-family: monospace;
+    font-weight: 600;
+}
+input[type="submit"]:hover {
+    -webkit-transform: rotateY(130deg);
+    transform: rotateY(130deg);
+    transition-duration: 5s;
+}
+main > form {
+    margin: auto;
+}
+}
+
+
+
+
+
+
+
+
+
